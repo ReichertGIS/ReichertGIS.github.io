@@ -29,12 +29,18 @@
     li {
       margin-bottom: 10px;
     }
+    .sub-menu {
+      display: none;
+    }
     a {
       text-decoration: none;
       color: #333;
     }
     a:hover {
       color: #007bff;
+    }
+    li:hover .sub-menu {
+      display: block;
     }
   </style>
 </head>
@@ -45,8 +51,8 @@
     <ul>
       <li><a href="/1_praktinis/index.html">Tauragės r. sav. statybų leidimai (kepler.gl)</a></li>
       <li>
-        Geoportal:
-        <ul>
+        <span>Geoportal:</span>
+        <ul class="sub-menu">
           <li><a href="/2_praktinis/index.html">Žemėlapis</a></li>
           <li><a href="/2_praktinis/atlasas.html">Atlasas</a></li>
         </ul>
