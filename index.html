@@ -18,6 +18,11 @@
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex; /* Use flexbox for layout */
+    }
+    .column {
+      flex: 1; /* Each column takes up equal space */
+      padding: 0 10px; /* Add some padding */
     }
     h1 {
       text-align: center;
@@ -36,22 +41,36 @@
     a:hover {
       color: #007bff;
     }
+    /* Hide the nested list by default */
+    .nested-list {
+      display: none;
+    }
+    /* Display the nested list when hovering over the parent li */
+    li:hover .nested-list {
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Interneto technologijos ir GIS praktiniai darbai:</h1>
-    1 praktinis:
-    <ul>
-      <li><a href="/1_praktinis/index.html">Tauragės r. sav. statybų leidimai (kepler.gl)</a></li>
-      <li>
-    2 praktinis:
-        <ul>
-          <li><a href="/2_praktinis/index.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos žemėlapis</a></li>
-          <li><a href="/2_praktinis/atlasas.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos atlasas</a></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="column">
+      <h1>1 praktinis:</h1>
+      <ul>
+        <li><a href="/1_praktinis/index.html">Tauragės r. sav. statybų leidimai (kepler.gl)</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h1>2 praktinis:</h1>
+      <ul>
+        <li>
+          <!-- Add a class to the nested list -->
+          <ul class="nested-list">
+            <li><a href="/2_praktinis/index.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos žemėlapis</a></li>
+            <li><a href="/2_praktinis/atlasas.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos atlasas</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
