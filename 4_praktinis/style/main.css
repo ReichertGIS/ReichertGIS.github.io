@@ -1,0 +1,41 @@
+html, body {
+    font-family: "Barlow", sans-serif;
+    background-color: #BFD9C9;
+}
+/* 1 pradzios header */
+#header {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../image/header.png);
+    background-size:cover;
+    background-position: center;
+    clear: both;
+  }
+
+    .logo {
+        width: 20%;
+        float: left;
+        height: 20%;
+        background-image: url(../image/herbas.svg);
+        background-size:cover;
+        background-position: center;
+        clear: both;
+
+        }
+
+    .navigation {
+        width: 80%;
+        float: right;
+        text-align: center;
+
+        }
+        .btn-default {
+            border: 1px solid #6A6761;;
+          }
+          
+            .btn-default:hover {
+              background-color: #6A6761;
+              color: white;
+            }
+
