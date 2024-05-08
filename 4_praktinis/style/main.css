@@ -21,7 +21,6 @@ html {
     height: 700px;
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.456);
     background-image: url(../image/taurage_vejo_malunai.jpg);
     background-size:cover;
     background-position: center;
@@ -232,7 +231,6 @@ html {
       height: 350px;
       width: 100%;
       margin: 0;
-      background-color: rgba(0, 0, 0, 0.456);
       background-image: url(../image/statybos.jpg);
       background-size:cover;
       background-position: center;
@@ -246,6 +244,82 @@ html {
       clear: both;
     }
 
+    /* 3 aplinkosaugos atlasas */
+
+    #header_atlasas {
+      height: 350px;
+      width: 100%;
+      margin: 0;
+      background-image: url(../image/atlasas.jpg);
+      background-size:cover;
+      background-position: center;
+      clear: both;
+      text-align: left;
+      border-bottom-right-radius: 20%;
+    }    
+
+    #atlasas_zemelapis {
+      padding: 2em;
+      clear: both;
+    }
+
+ /* 4 aplinkosaugos zemelapis */
+
+ #header_zemelapis {
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  background-image: url(../image/zemelapis.jpg);
+  background-size:cover;
+  background-position: center;
+  clear: both;
+  text-align: left;
+  border-bottom-right-radius: 20%;
+}    
+
+#zemelapis_zemelapis {
+  padding: 2em;
+  clear: both;
+}
+
+
+ /* 5 pranesk zemelapis */
+
+ #header_pranesk {
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  background-image: url(../image/pranesk.jpg);
+  background-size:cover;
+  background-position: center;
+  clear: both;
+  text-align: left;
+  border-bottom-right-radius: 20%;
+}    
+
+#pranesk_zemelapis {
+  padding: 2em;
+  clear: both;
+}
+
+/* 5 pranesimu statistikos zemelapis */
+
+#header_pranesimu_statistikos {
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  background-image: url(../image/pranesimu_statistika.jpg);
+  background-size:cover;
+  background-position: center;
+  clear: both;
+  text-align: left;
+  border-bottom-right-radius: 20%;
+}    
+
+#pranesimu_statistikos_zemelapis {
+  padding: 2em;
+  clear: both;
+}
 
 /* footeris */
 
