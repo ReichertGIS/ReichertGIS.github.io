@@ -184,6 +184,7 @@ html {
             font-weight: 300;
             text-decoration: none;
             padding: 0.5em 1em;
+            border-radius: 5%;
           }
           
             .mygtukas:hover {
@@ -192,7 +193,149 @@ html {
               border: 1px solid #68605C;
             }
 
+  /* pagr. projektai*/
+
+  .pagrindinio_turinys {
+    margin: 5%;
+    width: 90%;
+    height: 1620px;
+    color:#2E2B29;
+    text-align: center;
+  }
+
+  .projektu_pavadinimas {
+    height: 50px;
+    margin: 20px;
+    background-color: #68605C;
+    width: 100%;
+    border-bottom-right-radius: 40%;
+  }
+
+  .projektu_pavadinimas h1 {
+    font-weight: 400;
+    padding-bottom: 1em;
+    color: #D6C6BF;
+  }
+
+  .aplinkosaugos_projektai, .saugomos_teritorijos, .statybu_leidimai, .tvarkau_taurage_pranesimai, .tvarkau_taurage_pranesk {
+    height: 300px;
+    margin: 20px;
+    background-color: #F7E2DC;
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  .aplinkosaugos_projektai_container, .saugomos_teritorijos_container, .statybu_leidimai_container, .tvarkau_taurage_pranesimai_container, .tvarkau_taurage_pranesk_container {
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+    float: left;
+  }
+
+  .aplinkosaugos_projektai_container a {
+    height: 250px;
+    width: 250px;
+    display:block;
+    margin: 0;
+    background-image: url(../image/aplinkosaugos_projektai.png);
+    background-size:cover;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .aplinkosaugos_projektai_container a:hover {
+    filter: drop-shadow(10px 10px 10px #2E2B29);
+  }
+
+  .saugomos_teritorijos_container a{
+    height: 250px;
+    width: 250px;
+    display:block;
+    margin: 0;
+    background-image: url(../image/saugomos_teritorijos_pagr.png);
+    background-size:cover;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .saugomos_teritorijos_container a:hover {
+    filter: drop-shadow(10px 10px 10px #2E2B29);
+  }
+
+  .statybu_leidimai_container a{
+    height: 250px;
+    width: 250px;
+    display:block;
+    margin: 0;
+    background-image: url(../image/statybu_statistika_pagr.png);
+    background-size:cover;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .statybu_leidimai_container a:hover {
+    filter: drop-shadow(10px 10px 10px #2E2B29);
+  }
+
+  .tvarkau_taurage_pranesimai_container a{
+    height: 250px;
+    width: 250px;
+    display:block;
+    margin: 0;
+    background-image: url(../image/pranesimu_statistika_pagr.png);
+    background-size:cover;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .tvarkau_taurage_pranesimai_container a:hover {
+    filter: drop-shadow(10px 10px 10px #2E2B29);
+  }
+
+  .tvarkau_taurage_pranesk_container a{
+    height: 250px;
+    width: 250px;
+    display:block;
+    margin: 0;
+    background-image: url(../image/pranesk_pagr.png);
+    background-size:cover;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .tvarkau_taurage_pranesk_container a:hover {
+    filter: drop-shadow(10px 10px 10px #2E2B29);
+  }
+
+  .pagr_text {
+    height: 200px;
+    width: 600px;
+    margin: 50px;
+    float: left;
+    text-align: left;
+  }
+
+  .pagr_text h3 {
+    font-weight: 500;
+  }
+
+  .pagr_text h2 {
+    border-bottom: 2px solid #2E2B29;
+    font-weight: 400;
+    width: 50%;
+    
+  }
+
+  .pagr_text h4 {
+    font-weight: 400;
+  }
       
+
 /* pavadinimai puslapiams */
 
 .pavadinimas_puslapiams {
@@ -227,6 +370,7 @@ html {
   width: 100%;
   height: 700px;
   border: 2px solid #68615D;
+  border-radius: 1%;
 }
 
     /* 2 statistikai */
@@ -339,7 +483,70 @@ html {
   border-bottom-right-radius: 20%;
 }    
 
-/* 6 Kontaktai */
+/* Apie mus turinys */
+
+.apie_IT_ir_GIS {
+  margin: 5%;
+  width: 90%;
+  height: 500px;
+  color:#2E2B29;
+  text-align: left;
+}
+
+.turinys_apie_IT_ir_GIS {
+
+}
+
+.apie_IT_ir_GIS_nuotrauka {
+  height: 250px;
+  width: 250px;
+  display:block;
+  margin: 0;
+  background-image: url(../image/saugomos_teritorijos_pagr.png);
+  background-size:cover;
+  background-position: center;
+  clear:both;
+  border-radius: 3%;
+}
+
+.uzdaviniai {
+  margin: 5%;
+  width: 90%;
+  height: 500px;
+  color:#2E2B29;
+  text-align: left;
+}
+
+.sukure {
+  margin: 5%;
+  width: 90%;
+  height: 500px;
+  color:#2E2B29;
+  text-align: left;
+}
+
+
+.autoriaus_nuotrauka {
+  height: 250px;
+  width: 250px;
+  display:block;
+  margin: 0;
+  background-image: url(../image/saugomos_teritorijos_pagr.png);
+  background-size:cover;
+  background-position: center;
+  clear:both;
+  border-radius: 3%;
+}
+
+.tekstas_apie {
+  height: 300px;
+  margin: 20px;
+  background-color: #F7E2DC;
+  width: 100%;
+  border-radius: 1%;
+}
+
+/* 7 Kontaktai */
 
 #header_kontaktai {
   height: 350px;
@@ -354,38 +561,67 @@ html {
 }    
 
 #kontaktai {
-  width: 100%;
-  height: 700px;
-  margin: 2em;
+  width: 94%;
+  height: 640px;
+  padding: 30px 3%;
 }
 
 #kontaktu_forma {
   float: left;
   width: 40%;
-  height: 700px;
+  height: 640px;
 
 }
 
 .iframe-kontaktai iframe {
   width: 100%;
-  height: 700px;
+  height: 640px;
   border: 2px solid #68615D;
+  border-radius: 2%;
 }
 
-#kontaktu_info {
-  padding: 2em;
-  height: 700px;
-  width: 40%;
+.kontaktu_info {
   float: right;
+  width: 57%;
+  height: 640px;
 }
 
 .kontaktu_pavadinimas {
-  height: 100 px;
+  height: 80px;
   width: 100%;
+  float: right;
+  text-align: left;
   background-color: #68615D;
-  border-top-right-radius: 20%;
-  border-bottom-right-radius: 20%;
+  border-bottom-right-radius: 40%;
 }
+
+.kontaktu_pavadinimas h1{
+  padding-left: 5%;
+  color:#D6C6BF;
+  font-weight: 500;
+}
+
+.kontaktu_turinys {
+  height: 540px;
+  margin-top: 20px;
+  width: 100%;
+  float:right;
+  background-color: #F7E2DC;
+  border-radius: 2%;
+} 
+.kontaktu_turinys p{
+  padding-left: 5%;
+  padding-top: 8px;
+  color:#68615D;
+  font-weight: 500;
+}
+
+.iframe-adresas iframe{
+  width: 90%;
+  height: 350px;
+  margin: 10px 5%;
+}
+
 
 /* footeris */
 
@@ -458,5 +694,17 @@ html {
 
       .footer_teises p {
         margin:0;
-        padding: 2.45em 0;
+        padding: 2em 0 1em 0;
+      }
+
+      .footer_teises a {
+        color:#D6C6BF;
+        text-decoration: none;
+        margin:0;
+        padding: 1em 0;
+      }
+
+      .footer_teises a:hover{
+        color:#ffffff;
+        text-decoration: none;
       }
