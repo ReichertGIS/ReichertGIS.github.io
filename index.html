@@ -1,64 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pradinis puslapis</title>
-  <style>
-   body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #094926;
-}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tauragės rajono savivaldybės atlasas</title>
+        <link rel="stylesheet" href="/4_praktinis/style/main.css">
 
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #177039;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.993);
-  /* Add the background image */
-  background-image: url('https://www.vu.lt/site_images/new_og/logo_lt.png');
-  /* Center and cover the background image */
-  background-position: center;
-  background-size: cover;
-}
-    h1 {
-      text-align: center;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: #000000;
-    }
-    a:hover {
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Interneto technologijos ir GIS praktiniai darbai:</h1>
-    1 praktinis:
-    <ul>
-      <li><a href="/1_praktinis/index.html">Tauragės r. sav. statybų leidimai (kepler.gl)</a></li>
-      <li>
-    2 praktinis:
-        <ul>
-          <li><a href="/2_praktinis/index.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos žemėlapis</a></li>
-          <li><a href="/2_praktinis/atlasas.html">Geoportal interaktyvus Tauragės r. sav. aplinkosaugos atlasas</a></li>
-          <li><a href="https://services.arcgis.com/XdDVrnFqA9CT3JgB/arcgis/rest/services/Taurages_r_sav_gyventojai_2021_grid_1x1km/FeatureServer">Tauragės r. sav. gyventojų sk. statistika (ArcGIS REST Service)</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div id="pradzios_juosta">
+                <div class="logo">
+                    <a href="https://taurage.lt/" class="logotipas" ></a>
+                </div>
+
+                <div class="navigation">
+                    <div class="nuorodos">
+                        <a href="/4_praktinis/index.html">Pagrindinis</a>
+                        <a href="/4_praktinis/apie_mus.html">Apie mus</a>
+                        <div class="dropdown">
+                            <a href="" class="navigacijos_a_drop">Aplinkosauga &#x25BE</a>
+                            <div class="navigacijos_a_drop_turinys">
+                                <a href="/4_praktinis/aplinkosauga/zemelapis.html">Žemėlapis</a>
+                                <a href="/4_praktinis/aplinkosauga/atlasas.html">Atlasas</a>
+                            </div>
+                        </div>
+                        <a href="/4_praktinis/statistika.html">Statybų statistika</a>
+                        <div class="dropdown">
+                            <a href="" class="navigacijos_a_drop">"Tvarkau Tauragę" &#x25BE</a>
+                            <div class="navigacijos_a_drop_turinys">
+                                <a href="/4_praktinis/tvarkau_taurage/statistika_pranesimu.html">Statistika</a>
+                                <a href="/4_praktinis/tvarkau_taurage/pranesk.html">Pranešk</a>
+                            </div>
+                        </div>
+                        <a href="/4_praktinis/kontaktai.html">Kontaktai</a>
+                    </div>
+                    <div class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        class= "social-icon"
+                        viewBox="0 0 320 512">
+                        <path 
+                        fill="currentColor"
+                        d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        class= "social-icon"
+                        viewBox="0 0 448 512">
+                        <path 
+                        fill="currentColor"
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        class= "social-icon"
+                        viewBox="0 0 448 512">
+                        <path 
+                        fill="currentColor"
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        class= "social-icon"
+                        viewBox="0 0 512 512">
+                        <path 
+                        fill="currentColor"
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="pavadinimas">
+                <h1>Tauragės rajono savivaldybė</h1>
+                <h3> </h3>
+                <h2>IT ir GIS</h2>
+                <p>Tauragės rajono savivaldybė – įsikūrusi vakarų Lietuvoje, Žemaičių aukštumos ir Karšuvos žemumos sandūroje. Apsupta gamtos ir progresyvios bendruomenės, Tauragė tampa vis inovatyvesnė. Kokie IT ir GIS technologijų sprendiniai bei jų rezultatai taikomi savivaldybėje – rasite šioje svetainėje.</p>
+                <a href="/4_praktinis/apie_mus.html" class="mygtukas" >Apie mus</a>
+            </div>   
+        </div>
+
+        <div class="pagrindinio_turinys">
+            <div class="projektu_pavadinimas">
+                <h1>Mūsų vykdomi projektai</h1>
+            </div>
+                <div class="aplinkosaugos_projektai">
+                    <div class="aplinkosaugos_projektai_container">
+                        <a href="/4_praktinis/aplinkosauga/zemelapis.html"></a>
+                    </div>
+                    <div class="pagr_text">
+                        <h3>Aplinkosaugos projektai</h3>
+                        <h2></h2>
+                        <h4>Pateikiamas Tauragės r. sav. įvykusių aplinkosauginių projektų žemėlapis. Čia rasite visus organizuotus projektus siekusius tvarkyti aplinką bei ugdyti gyventojų gamtosauginį sąmoningumą.</h4>
+                        <a href="/4_praktinis/aplinkosauga/zemelapis.html" class="mygtukas" >Žemėlapis</a>
+                    </div>
+                </div>
+                <div class="saugomos_teritorijos">
+                    <div class="saugomos_teritorijos_container">
+                        <a href="/4_praktinis/aplinkosauga/atlasas.html"></a>
+                    </div>
+                    <div class="pagr_text">
+                        <h3>Saugomos teritorijos</h3>
+                        <h2></h2>
+                        <h4>Pateikiamos Tauragės r. sav. saugomos teritorijos per įvairius saugomų teritorijų žemėlapius bei jų palyginimus.</h4>
+                        <a href="/4_praktinis/aplinkosauga/atlasas.html" class="mygtukas" >Atlasas</a>
+                    </div>
+                </div>
+                <div class="statybu_leidimai">
+                    <div class="statybu_leidimai_container">
+                        <a href="/4_praktinis/statistika.html"></a>
+                    </div>
+                    <div class="pagr_text">
+                        <h3>Statybų statistika</h3>
+                        <h2></h2>
+                        <h4>Pateikiami Tauragės r. sav. statybos leidimų ir statybos valstybinės priežiūros informacinės sistemos „InfoStatyba“ duomenys pagal dokumento įrašo datą. Statybų rūšys ir jų tankio pasiskirstymas.</h4>
+                        <a href="/4_praktinis/statistika.html" class="mygtukas" >Statybų statistika</a>
+                    </div>
+                </div>
+                <div class="tvarkau_taurage_pranesimai">
+                    <div class="tvarkau_taurage_pranesimai_container">
+                        <a href="/4_praktinis/tvarkau_taurage/statistika_pranesimu.html"></a>
+                    </div>
+                    <div class="pagr_text">
+                        <h3>Pranešimų statistika</h3>
+                        <h2></h2>
+                        <h4>Ši žemėlapio aplikacija yra skirta analizuoti Tauragės r. sav. gyventojų pateiktų pranešimų statistiką, susijusią su įvairiomis savivaldybėje esančiomis infrastruktūrinėmis, aplinkosauginėmis problemomis ar siūlymais kaip gerinti gyvenimą savivaldybėje.</h4>
+                        <a href="/4_praktinis/tvarkau_taurage/statistika_pranesimu.html" class="mygtukas" >Pranešimų statistika</a>
+                    </div>
+                </div>
+                <div class="tvarkau_taurage_pranesk">
+                    <div class="tvarkau_taurage_pranesk_container">
+                        <a href="/4_praktinis/tvarkau_taurage/pranesk.html"></a>
+                    </div>
+                    <div class="pagr_text">
+                        <h3>"Tvarkau Tauragę" pranešk</h3>
+                        <h2></h2>
+                        <h4>Aplikacija skirta gyventojams pranešti bei fiksuoti Tauragės r. sav. esančioms infrastruktūrinėms, aplinkosauginėms problemoms, kurios vėliau bus svarstomos dėl jų patenkinimo.</h4>
+                        <a href="/4_praktinis/tvarkau_taurage/pranesk.html" class="mygtukas" >Pranešk</a>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div id="footer">
+            <div id="footer_logo">
+                <a href="https://taurage.lt/" class="footer_logotipas" ></a>
+            </div>
+
+            <div id="footer_tekstas">
+                <div class="footer_kontaktai">
+                    <p>Adresas: Vilnius, M. K. Čiurlionio g. 21</p>
+                    <p>Mob. tel. nr.: +37060000000</p>
+                    <p>El. pašto adresas: itirgis@taurage.lt</p>
+                </div>
+
+                <div class="footer_teises">
+                    <a href="/4_praktinis/index.html">Grįžti į Pagrindinį puslapį &#x2192</a>
+                    <p>2024 | IT ir GIS | Sukurta praktiniams darbams atsiskaityti</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
