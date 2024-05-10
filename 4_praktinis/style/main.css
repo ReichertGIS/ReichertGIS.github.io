@@ -206,7 +206,7 @@ html {
   .projektu_pavadinimas {
     height: 50px;
     margin: 20px;
-    background-color: #68605C;
+    background-color: #2E2B29;
     width: 100%;
     border-bottom-right-radius: 40%;
   }
@@ -214,7 +214,8 @@ html {
   .projektu_pavadinimas h1 {
     font-weight: 400;
     padding-bottom: 1em;
-    color: #D6C6BF;
+    color: #F7E2DC;
+    text-align: center;
   }
 
   .aplinkosaugos_projektai, .saugomos_teritorijos, .statybu_leidimai, .tvarkau_taurage_pranesimai, .tvarkau_taurage_pranesk {
@@ -488,62 +489,128 @@ html {
 .apie_IT_ir_GIS {
   margin: 5%;
   width: 90%;
-  height: 500px;
-  color:#2E2B29;
+  height: 310px;
   text-align: left;
 }
 
 .turinys_apie_IT_ir_GIS {
+  width: 53%;
+  height: 200px;
+  float: left;
+  text-align: justify;
+  margin: 20px 0 20px 10px;
+  border-radius: 1%;
+  background-color: #F7E2DC;
+  border-radius: 1%;
+}
 
+.turinys_apie_IT_ir_GIS h3 {
+ font-weight: 500;
+ font-size: larger;
+ color:#2E2B29;
+ margin:0;
+ padding: 1em;
 }
 
 .apie_IT_ir_GIS_nuotrauka {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 40%;
+  margin: 20px 20px 20px 40px;
+  float: left;
   display:block;
-  margin: 0;
-  background-image: url(../image/saugomos_teritorijos_pagr.png);
+  background-image: url(../image/apie_it_it_gis.jpg);
   background-size:cover;
   background-position: center;
-  clear:both;
   border-radius: 3%;
 }
 
 .uzdaviniai {
   margin: 5%;
   width: 90%;
-  height: 500px;
-  color:#2E2B29;
+  height: 430px;
   text-align: left;
+}
+
+.turinys_uzdaviniai {
+ width: 90%;
+ float: left;
+ margin: 20px 0 20px 40px;
+ height: 130px;
+ background-color: #F7E2DC;
+ border-radius: 1%;
+
+}
+
+.turinys_uzdaviniai h3 {
+  font-weight: 500;
+  font-size: larger;
+  color:#2E2B29;
+  margin:0;
+  padding: 1em;
+}
+
+.uzdaviniai_nuotrauka {
+  height: 150px;
+  width: 90%;
+  margin: 20px 0 20px 40px;
+  float: left;
+  background-image: url(../image/uzduotys.png);
+  background-color: #F7E2DC;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1%;
 }
 
 .sukure {
   margin: 5%;
   width: 90%;
-  height: 500px;
-  color:#2E2B29;
+  height: 400px;
   text-align: left;
 }
 
+.turinys_sukure {
+ width:40%;
+ margin: 20px 0 0 40px;
+ height: 310px;
+ float:left;
+ background-color: #68615D;
+ border-radius: 1%;
+ text-align: center;
 
-.autoriaus_nuotrauka {
-  height: 250px;
-  width: 250px;
-  display:block;
-  margin: 0;
-  background-image: url(../image/saugomos_teritorijos_pagr.png);
-  background-size:cover;
-  background-position: center;
-  clear:both;
-  border-radius: 3%;
 }
 
-.tekstas_apie {
-  height: 300px;
-  margin: 20px;
-  background-color: #F7E2DC;
-  width: 100%;
+.turinys_sukure h3{
+  font-weight: 500;
+  font-size: larger;
+  font-style: italic;
+  color:#F7E2DC;
+  margin:0;
+  padding: 6em 1em;
+}
+
+.autoriaus_nuotrauka {
+  width: 50%;
+  margin: 20px 0 0 40px;
+  height: 310px;
+  float:left;
+  background-color: #68615D;
   border-radius: 1%;
+}
+
+.vu_logotipas {
+  width: 80%;
+  margin: 15px 10%;
+  height: 280px;
+  float:left;
+  background-image: url(../image/VU_logotipas-bendrinis_baltas_LT.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vu_logotipas:hover {
+  filter: drop-shadow(10px 10px 10px #2E2B29);
 }
 
 /* 7 Kontaktai */
@@ -591,7 +658,7 @@ html {
   width: 100%;
   float: right;
   text-align: left;
-  background-color: #68615D;
+  background-color: #2E2B29;
   border-bottom-right-radius: 40%;
 }
 
@@ -611,9 +678,10 @@ html {
 } 
 .kontaktu_turinys p{
   padding-left: 5%;
-  padding-top: 8px;
-  color:#68615D;
+  padding-top: 5px;
+  color:#2E2B29;
   font-weight: 500;
+  font-size: large;
 }
 
 .iframe-adresas iframe{
