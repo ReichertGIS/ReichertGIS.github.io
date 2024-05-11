@@ -193,6 +193,180 @@ html {
               border: 1px solid #68605C;
             }
 
+
+  /* Apie Taurage */
+
+  .apie_taurage {
+    margin: 5%;
+    width: 90%;
+    height: fit-content;
+    text-align: center;
+  }
+
+  .apie_taurage_turinys {
+    height: fit-content;
+    margin: 20px;
+    background-color: #F7E2DC;
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  .apie_taurage_tekstas h3{
+  font-weight: 500;
+  font-size: larger;
+  color:#2E2B29;
+  margin:0;
+  padding: 1em;
+  text-align: justify;
+  }
+
+  .taurages_panorama {
+    width: 100%;
+    margin: 0 20px 20px 20px;
+    height: fit-content;
+  }
+
+  .taurages_panorama iframe {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    border: 2px solid #68615D;
+    border-radius: 1%;
+  }
+
+  .saltinis {
+    height: fit-content;
+    margin: 0 0 20px 0;
+    background-color: #68615D;
+    width:100%;
+    border-radius: 2%;
+  }
+
+  .saltinis_nuoroda {
+    text-decoration: none;
+    color:#F7E2DC;
+  }
+
+  .saltinis_nuoroda:hover {
+    color:#ffffff;
+    font-weight: 500;
+  }
+
+  .saltinis h4 {
+    font-weight: 400;
+    padding: 0.4em;
+    color:#F7E2DC;
+    margin:0;
+  }
+
+  .nuoroda_tekste {
+    text-decoration: none;
+    color:#2E2B29;
+  }
+
+  .nuoroda_tekste:hover {
+    color:#ffffff;
+    font-weight: 500;
+  }
+
+  .taurage_objektai {
+    height: fit-content;
+    margin: 0 20px 20px 20px;
+    background-color: #F7E2DC;
+    width: 100%;
+    border-radius: 1%;
+  }
+
+  .taurages_pilis, .taurages_baznycios, .taurages_aikste {
+    width: 100%;
+    height: fit-content;
+    margin: 0 20px 20px 20px;
+  }
+
+  .taurages_pilis_turinys {
+    height: fit-content;
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .taurages_pilis_nuotrauka {
+    height: 500px;
+    width: 100%;
+    display:block;
+    margin: 0 0 20px 0;
+    background-image: url(../image/taurages_pilis.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .taurages_baznycios {
+    width: 100%;
+    height: 670px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .taurages_trejybes {
+    height: 600px;
+    width: 40%;
+    margin: 0 5%;
+    float:left;
+  }
+
+  .taurages_trejybes_nuotrauka {
+    height: 600px;
+    width: 100%;
+    display:block;
+    margin: 0 0 20px 0;
+    background-image: url(../image/trejybes.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .taurages_mazvydo {
+    height: 600px;
+    width: 40%;
+    margin: 0 5%;
+    float:right;
+  }
+
+  .taurages_mazvydo_nuotrauka {
+    height: 600px;
+    width: 100%;
+    display:block;
+    margin: 0 0 20px 0;
+    background-image: url(../image/m_mazvydo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+
+  .taurages_aikste_turinys {
+    height: fit-content;
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .taurages_aikste_nuotrauka {
+    height: 700px;
+    width: 100%;
+    display:block;
+    margin: 0 0 20px 0;
+    background-image: url(../image/centrine_aikste.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear:both;
+    border-radius: 3%;
+  }
+  
   /* pagr. projektai*/
 
   .pagrindinio_turinys {
@@ -209,6 +383,7 @@ html {
     background-color: #2E2B29;
     width: 100%;
     border-bottom-right-radius: 40%;
+    text-align: center;
   }
 
   .projektu_pavadinimas h1 {
